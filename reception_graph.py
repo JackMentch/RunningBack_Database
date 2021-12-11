@@ -12,8 +12,6 @@ total_receptions = str([f'Week_{i}_Receptions +' for i in range(12,14)])[1:-3].r
 cur.execute(f"SELECT NAME, {total_receptions} FROM RUNNINGBACK WHERE {total_receptions} > 8 ORDER BY {total_receptions}")
 rows = cur.fetchall()
 
-print(rows)
-
 
 color = (0, 0, 0)
 
